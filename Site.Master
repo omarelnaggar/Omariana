@@ -1,0 +1,228 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Omariana.SiteMaster" %>
+
+<!DOCTYPE html>
+<!-- saved from url=(0024)/ -->
+<html>
+<!--<html lang="en" class="wf-vinyl-n4-active wf-vinyl-i4-active wf-rooneyweb-n4-active wf-rooneyweb-i4-active wf-rooneyweb-n5-active wf-rooneyweb-i5-active wf-rooneyweb-n7-active wf-rooneyweb-i7-active wf-active">-->
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title><%: Page.Title %></title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+
+    <link rel="stylesheet" type="text/css" href="./Images/style.css" media="screen">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!--<script type="text/javascript" async="" src="./Images/mixpanel-2.2.min.js"></script>-->
+
+    <!--typekit-->
+    <script type="text/javascript" src="//use.typekit.net/frr8bog.js"></script>
+    <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+    <!--/typekit-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
+    <script src="http://malsup.github.io/jquery.cycle2.tile.js"></script>
+
+    <script type="text/javascript" src="./Images/jquery-latest.js"></script>
+    <script src="./Images/slides.min.jquery.js"></script>
+    <script>
+        $(function () {
+            $('#slides').slides({
+                pause: 1000,
+                preload: true,
+                effect: 'fade',
+                fadeSpeed: 600,
+                crossfade: true,
+                hoverPause: true,
+                bigTarget: true
+            });
+
+        });
+    </script>
+
+    <!-- start Mixpanel -->
+    <script type="text/javascript">(function (e, b) {
+        if (!b.__SV) {
+            var a, f, i, g; window.mixpanel = b; a = e.createElement("script"); a.type = "text/javascript"; a.async = !0; a.src = ("https:" === e.location.protocol ? "https:" : "http:") + '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js'; f = e.getElementsByTagName("script")[0]; f.parentNode.insertBefore(a, f); b._i = []; b.init = function (a, e, d) {
+                function f(b, h) { var a = h.split("."); 2 == a.length && (b = b[a[0]], h = a[1]); b[h] = function () { b.push([h].concat(Array.prototype.slice.call(arguments, 0))) } } var c = b; "undefined" !==
+                    typeof d ? c = b[d] = [] : d = "mixpanel"; c.people = c.people || []; c.toString = function (b) { var a = "mixpanel"; "mixpanel" !== d && (a += "." + d); b || (a += " (stub)"); return a }; c.people.toString = function () { return c.toString(1) + ".people (stub)" }; i = "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" "); for (g = 0; g < i.length; g++) f(c, i[g]);
+                        b._i.push([a, e, d])
+                }; b.__SV = 1.2
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("c998b06d3930f1fed648e52abe0be56d");
+    </script>
+    <!-- end Mixpanel -->
+
+    <style>
+        * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+        #cycle-1 div { width:100%; }
+        #cycle-2 .cycle-slide { border:3px solid #fff; }
+        #cycle-2 .cycle-slide-active { border:3px solid #004; }
+
+        #slideshow-1,#slideshow-2 { width: 50%; max-width: 800px; margin: auto }
+        #slideshow-2 { margin-top: 10px }
+        .cycle-slideshow img { width: 100%; height: auto; display: block; }
+    </style>
+
+    <style>
+    	/* set border-box so that percents can be used for width, padding, etc (personal preference) */
+        .cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+		.cycle-slideshow { width: 45%; min-width: 800px; max-width: 800px; margin: 10px auto; padding: 0; position: relative;
+    	background: url(http://malsup.github.com/images/spinner.gif) 50% 50% no-repeat;}
+
+		/* slideshow images (for most of the demos, these are the actual "slides") */
+		.cycle-slideshow img {
+			/*
+			some of these styles will be set by the plugin (by default) but setting them here
+			helps avoid flash-of-unstyled-content
+			*/
+			position: absolute; top: 0; left: 0;
+			width: 100%; padding: 0; display: block;
+		}
+
+		/* in case script does not load */
+		.cycle-slideshow img:first-child {
+			position: static; z-index: 100;
+		}
+
+		/* pager */
+		.cycle-pager {
+			text-align: center; width: 100%; z-index: 500; position: absolute; top: 10px; overflow: hidden;
+		}
+		.cycle-pager span {
+			font-family: arial; font-size: 50px; width: 16px; height: 16px;
+			display: inline-block; color: #ddd; cursor: pointer;
+		}
+		.cycle-pager span.cycle-pager-active { color: #D69746;}
+		.cycle-pager > * { cursor: pointer;}
+
+
+		/* caption */
+		.cycle-caption { position: absolute; color: white; bottom: 15px; right: 15px; z-index: 700; }
+
+
+		/* overlay */
+		.cycle-overlay {
+			font-family: tahoma, arial;
+			position: absolute; bottom: 0; width: 100%; z-index: 600;
+			background: black; color: white; padding: 15px; opacity: .5;
+		}
+
+
+		/* prev / next links */
+		.cycle-prev, .cycle-next { position: absolute; top: 0; width: 30%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
+		.cycle-prev { left: 0;  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;}
+		.cycle-next { right: 0; background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;}
+		.cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
+
+		.disabled { opacity: .5; filter:alpha(opacity=50); }
+
+
+		/* display paused text on top of paused slideshow */
+		.cycle-paused:after {
+			content: 'Paused'; color: white; background: black; padding: 10px;
+			z-index: 500; position: absolute; top: 10px; right: 10px;
+			border-radius: 10px;
+			opacity: .5; filter: alpha(opacity=50);
+		}
+
+		/*
+			media queries
+			some style overrides to make things more pleasant on mobile devices
+		*/
+
+		@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+			.cycle-slideshow { width: 200px;}
+			.cycle-overlay { padding: 4px }
+			.cycle-caption { bottom: 4px; right: 4px }
+		}
+
+    </style>
+</head>
+<body id="home">
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="jquery.ui.combined" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="top">
+            <asp:Image id="HeaderImage" runat="server" ImageUrl="./Images/couple.jpg" AlternateText="The ElNaggars" />
+        </div>
+        <div class="bump"></div>
+        <div style="clear: both;">&nbsp;</div>
+        <div class="zag"></div>
+
+        <div id="menu">
+            <ul>
+                <li id="menunav"><a href="/" id="homenav">The Couple</a></li>
+                <li id="menunav"><a href="/proposal.aspx" id="proposalnav">Proposal</a></li>
+                <li id="menunav"><a href="/rsvp.aspx" id="rsvpnav">RSVP</a></li>
+                <li id="menunav"><a href="/details.aspx" id="detailsnav">Wedding Details</a></li>
+                <li id="menunav"><a href="/registry.aspx" id="registrynav">Registry</a></li>
+            </ul>
+        </div>
+        <!-- /menu -->
+
+        <div class="bump">&nbsp;</div>
+
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+
+        <div style="clear: both;">&nbsp;</div>
+        <div class="bump" style="margin-top: 20px;"></div>
+
+        <p style="text-align: center;">
+            <img src="./Images/arrows.png" alt="B and C" width="143" height="159"></p>
+        <div style="clear: both; margin-top: 10px;">&nbsp;</div>
+
+        <div class="footer">
+            <img src="./Images/dancing.png" alt="Dancing Shoes">
+        </div>
+
+        <div style="clear: both;">&nbsp;</div>
+        <div class="bump"></div>
+
+        <p style="text-align: center; font-size: 11px;"><strong><em><a href="http://www.hark.com/">Site built by the groom</a></em></strong></p>
+        <strong></strong>
+
+        <!--
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                </div>
+            </div>
+        </footer>
+        -->
+    </form>
+</body>
+</html>
