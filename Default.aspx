@@ -23,7 +23,7 @@
         <div class="bump"></div>
 
         <div class="fourcol_3">
-                                                    <blockquote>Hey everybody, welcome to Omariana.com! We'll be updating this website with all relevant information for our wedding, as well as some nice PDA - you know we can't resist. We can't wait to celebrate with all of you, thanks in advance for all of your support. <a href="/rsvp.aspx">And don't forget to RSVP</a>! — Omariana</blockquote>
+            <blockquote>Hey everybody, welcome to Omariana.com! We'll be updating this website with all relevant information for our wedding, as well as some nice PDA - you know we can't resist. We can't wait to celebrate with all of you, thanks in advance for all of your support. <!--<a href="/rsvp.aspx">And don't forget to RSVP</a>! -->— Omariana</blockquote>
         </div>
 
         <div class="fourcol">
@@ -54,14 +54,14 @@
         <div class="twocol">
             <img src="./Images/HERS.jpg" alt="Riana">
             <h1 class="profile">Her</h1>
-            <p>Riana is gonna tell you a bit about herself here.</p>
+            <p>Hi, I'm Riana! I was born here on the beautiful island of Oahu, but was raised in Japan. I love adventure, and have a passion for travel, food, and art! I was living in Dubai travelling the world for 2 years, but it turned out that the man of my dreams was in Tokyo all along! =)</p>
             <p style="font-style: italic; color: #aaa;">I kind of have a thing for Him →</p>
         </div>
 
         <div class="twocol">
             <img src="./Images/HIS.jpg" alt="Omar">
             <h1 class="profile">Him</h1>
-            <p>Whatup ladies and gents, I am a lifelong nerd who has had the great fortune to journey around the world for the past 6 years. During my travels, I was lucky enough to find an incredible woman who thinks my addictions to technology and cartoons are adorable!</p>
+            <p>Whatup ladies and gents, I'm Omar, a lifelong nerd who had the great fortune to journey around the world for the past 6 years. During my travels, I was lucky enough to find an incredible woman who thinks my addictions to technology and cartoons are adorable!</p>
             <p style="font-style: italic; color: #aaa;">← I have a bit of a crush on Her</p>
         </div>
 

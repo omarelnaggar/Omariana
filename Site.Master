@@ -180,11 +180,12 @@
 
         <div id="menu">
             <ul>
-                <li id="menunav"><a href="/" id="homenav">The Couple</a></li>
-                <li id="menunav"><a href="/proposal.aspx" id="proposalnav">Proposal</a></li>
-                <li id="menunav"><a href="/rsvp.aspx" id="rsvpnav">RSVP</a></li>
-                <li id="menunav"><a href="/details.aspx" id="detailsnav">Wedding Details</a></li>
-                <li id="menunav"><a href="/registry.aspx" id="registrynav">Registry</a></li>
+                <li id="menunav"><asp:HyperLink runat="server" ID="defaultnav" NavigateUrl="/">The Couple</asp:HyperLink></li>
+                <li id="menunav"><asp:HyperLink runat="server" ID="proposalnav" NavigateUrl="~/Proposal.aspx">Proposal</asp:HyperLink></li>
+                <li id="menunav"><asp:HyperLink runat="server" ID="rsvpnav" NavigateUrl="~/RSVP.aspx">RSVP</asp:HyperLink></li>
+                <li id="menunav"><asp:HyperLink runat="server" ID="detailsnav" NavigateUrl="~/Details.aspx">Wedding Details</asp:HyperLink></li>
+                <li id="menunav"><asp:HyperLink runat="server" ID="registrynav" NavigateUrl="~/Registry.aspx">Registry</asp:HyperLink></li>
+                <!--<li id="menunav"><a href="/rsvp.aspx" id="rsvpnav">RSVP</a></li>-->
             </ul>
         </div>
         <!-- /menu -->

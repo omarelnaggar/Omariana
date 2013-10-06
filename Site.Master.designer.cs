@@ -31,6 +31,51 @@ namespace Omariana {
         protected global::System.Web.UI.WebControls.Image HeaderImage;
         
         /// <summary>
+        /// defaultnav control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink defaultnav;
+        
+        /// <summary>
+        /// proposalnav control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink proposalnav;
+        
+        /// <summary>
+        /// rsvpnav control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink rsvpnav;
+        
+        /// <summary>
+        /// detailsnav control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink detailsnav;
+        
+        /// <summary>
+        /// registrynav control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink registrynav;
+        
+        /// <summary>
         /// FeaturedContent control.
         /// </summary>
         /// <remarks>

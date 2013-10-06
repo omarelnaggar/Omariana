@@ -296,7 +296,7 @@ body#details a#detailsnav,
 body#registry a#registrynav,
 body#services a#servicesnav {
 color: #000;
-border-bottom: 5px solid #cbd500;
+/*border-bottom: 5px solid #cbd500;*/
 }
 
 

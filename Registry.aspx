@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registry.aspx.cs" Inherits="Omariana.Registry" %>
+﻿<%@ Page Title="Omariana ~ Rianaggar: Registry" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registry.aspx.cs" Inherits="Omariana.Registry" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
@@ -6,10 +6,13 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
-        <div class="twocol">
-            <!--<h3>WE’RE REGISTERED AT MYREGISTRY.COM<br>AS WELL AS BED BATH & BEYOND.</h3><br>-->
-            <p>There's a chance we're going to do something fun and creative here... no promises.</p>
+        <div class="onecol" style="text-align: center;">
+            <h1>Coming Soon!</h1>
         </div>
+
+        <!--<div class="twocol">
+            <h3>WE’RE REGISTERED AT MYREGISTRY.COM<br>AS WELL AS BED BATH & BEYOND.</h3><br>
+        </div>-->
         <!--twocol-->
 
         <div style="clear: both;">&nbsp;</div>
