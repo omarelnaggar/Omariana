@@ -25,7 +25,7 @@
 			</p>
 
 
-            <p>You can find the website for Lanikuhonua <a href="http://www.lanikuhonua.org/Contact/">here</a>, and if you'd prefer to use there map feel free to download it <a href="http://www.lanikuhonua.org/_literature_34163/Lanikuhonua_Map">here</a>.</p>
+            <p>You can find the website for Lanikuhonua <a href="http://www.lanikuhonua.org/Contact/">here</a>, and if you'd prefer to use their map feel free to download it <a href="http://www.lanikuhonua.org/_literature_34163/Lanikuhonua_Map">here</a>.</p>
             
 
 			<p><span style="color:#000;font-size:16px">Reception</span><br>

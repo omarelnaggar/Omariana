@@ -61,7 +61,7 @@
         <div class="twocol">
             <img src="./Images/HIS.jpg" alt="Omar">
             <h1 class="profile">Him</h1>
-            <p>Whatup ladies and gents, I'm Omar, a lifelong nerd who had the great fortune to journey around the world for the past 6 years. During my travels, I was lucky enough to find an incredible woman who thinks my addictions to technology and cartoons are adorable!</p>
+            <p>Whatup ladies and gents, I'm Omar, a lifelong nerd from Philadelphia who had the great fortune to journey around the world for the past 6 years. During my travels, I was lucky enough to find an incredible woman who thinks my addictions to technology and cartoons are adorable!</p>
             <p style="font-style: italic; color: #aaa;">← I have a bit of a crush on Her</p>
         </div>
 
